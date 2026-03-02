@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #d86ad8;
+        font-family: "Times New Roman", serif;
+      }
+
+      h2 {
+        margin: 15px 0 10px 10px;
+      }
+
+      .wrapper {
+        padding: 0 10px;
+        height: 100vh;
+      }
+
+      .box {
+        width: 260px;
+        background-color: #e6e6e6;
+        padding: 10px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        float: left;
+        box-sizing: border-box;
+      }
+
+      .middle-scroll {
+        clear: both;
+        background-color: #e6e6e6;
+        padding: 10px;
+        margin-bottom: 15px;
+        height: 70px;
+        overflow-y: scroll;
+        font-weight: bold;
+        box-sizing: border-box;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .container2 {
+        background-color: #f1f0c4;
+        font-family: "Times New Roman", Times, serif;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .article {
+        background-color: white;
+        border: 2px solid #8a8a8a;
+        padding: 15px;
+        margin-bottom: 20px;
+        max-width: 1000px;
+      }
+
+      .article h2 {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+        padding: 1px 4px;
+      }
+
+      .last {
+        background-color: white;
+        border: 2px dashed red;
+        color: red;
+      }
+
+      .last h2 {
+        color: red;
+      }
+      .container3 {
+        height: 100vh;
+        background-color: white;
+      }
+      .container3 img {
+        height: 500px;
+        border: 2px solid black;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: left;
+        width: 75%;
+      }
+
+      .fixed-img {
+        position: fixed;
+        right: 40px;
+        top: 100px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Floating Articles</h2>
+
+    <div class="wrapper clearfix">
+      <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        elementum purus justo pellentesque, quis varius arcu scelerisque. Nam a
+        justo.
+      </div>
+
+      <div class="box">
+        Fusce molestie, ipsum id interdum commodo, mauris quis sagittis lorem,
+        sit amet aliquet dui nisl dapibus augue. Maecenas auctor eros sit amet.
+      </div>
+
+      <div class="box">
+        Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia.
+        Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor
+        nisl, sit amet facilisis nisl est.
+      </div>
+
+      <div class="middle-scroll">
+        Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel
+        est vel nulla euismod pretium eu aliquet diam. Nulla ac auctor ante,
+        volutpat pharetra nunc. Etiam nec nisl gravida, efficitur felis gravida,
+        facilisis risus. Nunc augue sem, molestie ac congue at, auctor sit amet
+        turpis. Nulla egestas ullamcorper auctor. Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Ex minima, tempore hic impedit vero
+        commodi aliquam non blanditiis obcaecati eaque culpa facilis, fugiat
+        eveniet. Ipsum esse voluptatibus facilis voluptate nihil?
+      </div>
+
+      <div class="box">
+        Morbi commodo bibendum mattis. Vivamus commodo ex felis, quis dictum
+        quam molestie quis. Mauris nunc felis, sagittis vel massa id,
+        pellentesque semper augue.
+      </div>
+
+      <div class="box">
+        Nullam eget lacus ex. Ut commodo dolor id odio mattis lacinia.
+        Vestibulum varius, lectus non facilisis faucibus, magna ex porttitor
+        nisl, sit amet facilisis nisl est.
+      </div>
+    </div>
+
+    <div class="container2">
+      <h1>CSS Articles - External CSS Sheet!</h1>
+
+      <div class="article">
+        <h2>Heading Num. 2</h2>
+        <p>
+          Lorem <span class="highlight">ipsum</span> dolor sit amet, consectetur
+          adipiscing elit. Proin lacinia lorem eu porttitor luctus. Sed ac
+          mauris vitae arcu consectetur tempor sed congue felis. Vivamus posuere
+          scelerisque dapibus. Nam ultricies laoreet augue id semper. Sed eu
+          lacus ac dolor volutpat ullamcorper at sed risus. Nunc sollicitudin
+          bibendum varius. Donec laoreet gravida metus. Fusce porta consequat
+          augue, eget fermentum lectus molestie ultrices. Etiam sit amet sem sed
+          massa maximus eleifend. Etiam eu maximus
+          <span class="highlight">ipsum</span>. Morbi ut venenatis mauris. Etiam
+          vehicula nisl neque, fringilla pellentesque dui consequat
+          <span class="highlight">quis</span>.
+        </p>
+      </div>
+
+      <div class="article">
+        <h2>Heading Num. 2</h2>
+        <p>
+          Donec nec lacus et felis scelerisque iaculis a vitae nibh. Nullam in
+          sapien condimentum erat interdum pretium eget sit amet ex. Duis sed
+          enim nisl. Cras at lacus vitae metus posuere vestibulum. Proin posuere
+          tincidunt <span class="highlight">ipsum</span> ut aliquam. Aenean
+          lacinia urna mauris, <span class="highlight">quis</span> volutpat
+          nulla blandit et. Nam placerat porta ornare. Nunc pretium elit et leo
+          blandit, consectetur pretium sapien porttitor. Aenean consectetur
+          malesuada enim, eget fringilla dolor efficitur id. Curabitur ut
+          pulvinar nulla. Sed mollis felis eget blandit venenatis.
+        </p>
+      </div>
+
+      <div class="article last">
+        <h2>Heading Num. 2</h2>
+        <p style="border: 3px dashed red; padding: 30px">
+          Etiam in ex <span class="highlight">quis</span> eros hendrerit
+          sollicitudin vitae iaculis neque. Vestibulum ornare nibh lectus, nec
+          blandit justo efficitur in. Morbi et porta erat,
+          <span class="highlight">quis</span> tristique lorem. Nunc mollis
+          egestas ligula, id iaculis mauris dapibus sagittis. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Phasellus vestibulum non augue scelerisque tincidunt.
+          Vivamus dictum luctus neque, sed scelerisque quam faucibus vitae.
+        </p>
+      </div>
+    </div>
+    <div class="container3">
+      <h1>Fixed Image</h1>
+
+      <img src="./src/fixedpic.png" class="fixed-img" />
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        elementum purus a justo varius arcu scelerisque. Nam porta odio et orci
+        placerat venenatis. Aliquam suscipit auctor ex, habitasse platea
+        dictumst. Pellentesque mattis laoreet nisl, at tristique ipsum venenatis
+        at. Cras porta erat molestie sit amet. Donec faucibus euismod non
+        ornare. Phasellus urna turpis, dictum vel dui. Proin ex purus, ultrices
+        sed sollicitudin a, venenatis ipsum. Mauris dictum magna pretium ac. Nam
+        vel metus ut ligula tristique egestas sed ac tortor. Etiam vel tincidunt
+        elit. Maecenas pretium massa vel interdum pellentesque.
+      </p>
+
+      <p>
+        Fusce molestie, ipsum id interdum commodo, mauris dui sagittis lorem,
+        sit amet aliquet dui justo vel ligula. Maecenas auctor eros sit amet
+        ante molestie, id ultrices nunc lobortis. Maecenas sed ultricies felis,
+        et accumsan ipsum. In aliquam vestibulum urna at luctus. Praesent
+        rhoncus tellus ac tortor sagittis laoreet. Duis id consequat tellus ac
+        imperdiet varius. Etiam ullamcorper, justo quis bibendum scelerisque,
+        ligula velit ullamcorper tortor purus vitae felis. Ut ligula tellus,
+        vehicula vel fermentum non, gravida et diam.
+      </p>
+
+      <p>
+        Phasellus vitae pulvinar ipsum. Proin egestas lobortis mauris. Ut vel
+        est vel nulla euismod pretium. Nulla ac auctor ante, volutpat pharetra
+        nunc. Etiam nec nisl gravida, efficitur felis gravida, faucibus sem.
+        Donec non magna non tellus volutpat fermentum. Ut nec sagittis orci.
+        Aliquam pulvinar feugiat lectus et ultrices sed.
+      </p>
+
+      <p>
+        Morbi commodo bibendum mattis. Vivamus commodo ex felis, quis dictum
+        quam molestie quis. Mauris nunc felis, sagittis vel massa id, sodales
+        congue nunc. Maecenas tempor nulla diam, ac fermentum purus fringilla
+        id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+        feugiat pulvinar ornare. Etiam non gravida eros.
+      </p>
+    </div>
+  </body>
+</html>

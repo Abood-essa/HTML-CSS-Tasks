@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <style>
+      .first-half {
+        background-color: #654321;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        font-size: 70px;
+      }
+      .secound-half {
+        background-color: #f0e68c;
+        height: 50vh;
+      }
+      nav {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: green;
+        font-weight: bold;
+        margin: 0 25px;
+        font-size: 30px;
+      }
+      div h1 {
+        font-size: 60px;
+      }
+      .content p {
+        color: #654321;
+        font-size: 30px;
+      }
+      .copyright {
+        color: black !important;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #8fb1db;
+      }
+
+      .container2 {
+        width: 360px;
+        background: white;
+        padding: 35px 30px;
+        border-radius: 25px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .heading {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .heading h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: #2c3e73;
+        margin-bottom: 5px;
+      }
+
+      .heading p {
+        font-size: 20px;
+        color: #666;
+      }
+
+      form div {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3;
+        outline: none;
+        font-size: 14px;
+        background-color: #ffffff;
+        transition: 0.3s ease;
+      }
+
+      input:focus {
+        border-color: #4aa3df;
+        box-shadow: 0 0 0 2px rgba(74, 163, 223, 0.2);
+      }
+
+      /* Button */
+      .btn-signup {
+        width: fit-content;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background: #4aa3df;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      .btn-signup:hover {
+        background: #3793cf;
+      }
+      .btn-div {
+        display: flex;
+        justify-content: center;
+      }
+      .container3 {
+        width: 800px;
+        margin: 30px auto;
+        background-color: rgb(0, 162, 255);
+        padding: 50px;
+        border-radius: 25px;
+      }
+      .container3 h4 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+      }
+      .container3 input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        border: 1px solid #cfd8e3;
+        outline: none;
+        font-size: 18px;
+        background-color: #ffffff;
+        transition: 0.3s ease;
+      }
+      textarea {
+        border-radius: 8px;
+        font-size: 18px;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+        height: 120px;
+      }
+      .btn-send {
+        width: fit-content;
+        padding: 5px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background: blue;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-half">
+      <h2>THIS IS MY BANNER TEXT</h2>
+    </div>
+    <div class="secound-half">
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#">INFO</a>
+        <a href="#">CONTACT</a>
+        <a href="#">HUBPAGES</a>
+      </nav>
+
+      <div class="content">
+        <h1>This Is My Paragraph Header</h1>
+
+        <p>
+          This is where I am going to put useful and informative text about my
+          website.
+        </p>
+
+        <p>
+          This is where I am can place even more information about my website.
+        </p>
+
+        <p class="copyright">
+          This is where I can place a copyright logo like this &copy;
+        </p>
+      </div>
+    </div>
+    <div class="main">
+      <br />
+      <div class="container2">
+        <div class="heading">
+          <h3>CODEWITHHRANDOM</h3>
+          <p>Thank you for being with me</p>
+        </div>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div>
+            <label for="repassword">Repeat password</label>
+            <input type="password" name="repassword" id="repassword" />
+          </div>
+          <div class="btn-div">
+            <button type="submit" class="btn-signup">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container3">
+      <h4>Contact Us</h4>
+      <form>
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+        <input type="number" placeholder="XXX XXX XXXX" />
+        <textarea name="" id="" placeholder="Your massage here ..."></textarea>
+      </form>
+      <button type="submit" class="btn-send">Send</button>
+    </div>
+  </body>
+</html>

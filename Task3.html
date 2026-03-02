@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <style>
+      body {
+        background-color: cadetblue;
+      }
+      .container {
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: rgb(154, 94, 210);
+        box-shadow: 10px 10px 40px 20px rgb(128, 66, 186);
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+      }
+      .name {
+        display: flex;
+        flex-direction: row;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin: 5px;
+        margin-bottom: 10px;
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+      }
+      .termsandp {
+        color: white;
+        text-align: center;
+        margin: 20px;
+        font-size: 16px;
+      }
+      .btn-signup {
+        font-size: 24px;
+        color: rgb(33, 26, 26);
+        padding: 10px 20px;
+        border-radius: 15px;
+        background-color: dimgray;
+        border: none;
+        opacity: 0.8;
+      }
+      .login-link {
+        text-align: center;
+        color: white;
+        margin: 25px 5px;
+        font-size: 16px;
+      }
+      .login-link a {
+        color: white;
+      }
+      p {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="name">
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <div class="termsandp">
+          <input class="form-check-input" type="checkbox" id="terms" />
+          <label class="form-check-label terms" for="terms">
+            I accept the Terms of Use & Privacy policy
+          </label>
+        </div>
+        <button type="submit" class="btn-signup">Sign Up</button>
+        <div class="login-link">
+          Already have an account? <a href="signUp.html"> Login here</a>
+        </div>
+        <p>Copyright © YourCompany.com</p>
+      </form>
+    </div>
+  </body>
+</html>

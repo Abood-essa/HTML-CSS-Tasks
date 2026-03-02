@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+      }
+      .left-side {
+        background-color: yellow;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right-side {
+        background-color: blue;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div h1 {
+        color: white;
+        font-size: 60px;
+      }
+      .container1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 15px;
+      }
+      .container1 img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+      }
+      .container2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 15px solid goldenrod;
+      }
+      .container2 div {
+        color: white;
+        font-size: 100px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div1 {
+        background-color: aqua;
+      }
+      .div2 {
+        background-color: cadetblue;
+      }
+      .div3 {
+        background-color: blueviolet;
+      }
+      .div4 {
+        background-color: darkslategray;
+      }
+      .div5 {
+        background-color: yellow;
+      }
+      .div6 {
+        background-color: orangered;
+      }
+      .div7 {
+        background-color: brown;
+      }
+      .div8 {
+        background-color: darkgray;
+      }
+      .div9 {
+        background-color: lime;
+      }
+      .div10 {
+        background-color: limegreen;
+      }
+      .container3 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 4fr 2fr;
+        gap: 15px;
+        padding: 15px;
+        height: 100vh;
+      }
+      .container3 div {
+        width: 100%;
+      }
+      .blackdiv {
+        background: black;
+        grid-column: 1 / 3;
+      }
+      .yellowdiv {
+        background-color: yellow;
+      }
+      .greendiv {
+        background-color: green;
+      }
+      .bluediv {
+        background: blue;
+        grid-column: 1 / 3;
+      }
+      .container4 {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        height: 100vh;
+        border: 15px solid goldenrod;
+      }
+      .container4 div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 80px;
+        color: white;
+        padding-top: 20px;
+      }
+      .b1 {
+        background: green;
+      }
+      .b2 {
+        background: yellow;
+        color: white;
+      }
+      .b3 {
+        background: purple;
+      }
+      .b4 {
+        background: gray;
+      }
+      .b5 {
+        background: blue;
+      }
+      .b6 {
+        background: orange;
+      }
+      .b7 {
+        background: #e6b3b3;
+      }
+      .b8 {
+        background: red;
+      }
+      .b9 {
+        background: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <h1>First Part</h1>
+      </div>
+      <div class="right-side">
+        <h1>Second Part</h1>
+      </div>
+    </div>
+    <div class="container1">
+      <img src="./src/picOne.png" alt="" />
+      <img src="./src/picTwo.png" alt="" />
+      <img src="./src/picThree.png" alt="" />
+      <img src="./src/picFour.png" alt="" />
+      <img src="./src/picFive.png" alt="" />
+      <img src="./src/picSix.png" alt="" />
+      <img src="./src/picSeven.png" alt="" />
+      <img src="./src/picEight.png" alt="" />
+    </div>
+    <div class="container2">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+      <div class="div4">4</div>
+      <div class="div5">5</div>
+      <div class="div6">6</div>
+      <div class="div7">7</div>
+      <div class="div8">8</div>
+      <div class="div9">9</div>
+      <div class="div10">10</div>
+    </div>
+    <div class="container3">
+      <div class="blackdiv"></div>
+      <div class="yellowdiv"></div>
+      <div class="greendiv"></div>
+      <div class="bluediv"></div>
+    </div>
+
+    <div class="container4">
+      <div class="b1">1</div>
+      <div class="b2">2</div>
+      <div class="b3">3</div>
+      <div class="b4">4</div>
+      <div class="b5">5</div>
+      <div class="b6">6</div>
+      <div class="b7">7</div>
+      <div class="b8">8</div>
+      <div class="b9">9</div>
+    </div>
+  </body>
+</html>
